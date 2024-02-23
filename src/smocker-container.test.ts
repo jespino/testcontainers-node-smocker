@@ -23,7 +23,9 @@ describe("SmockerContainer", () => {
       },
     ];
     const apiUri = container.getApiUri();
-    await axios.post(apiUri + "mocks", JSON.stringify(mock), { headers: { "Content-Type": "application/json" } });
+    await axios.post(apiUri + "mocks", JSON.stringify(mock), {
+      headers: { "Content-Type": "application/json" },
+    });
 
     const mockUri = container.getMockUri();
     const response = await axios.get(mockUri + "test");
