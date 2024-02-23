@@ -4,7 +4,6 @@ import axios from "axios";
 describe("SmockerContainer", () => {
   jest.setTimeout(180_000);
 
-  // connect {
   it("should create a mock and reply properly to that mock", async () => {
     const container = await new SmockerContainer().start();
 
@@ -33,5 +32,4 @@ describe("SmockerContainer", () => {
 
     await container.stop();
   });
-  // }
 });
