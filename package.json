@@ -1,6 +1,6 @@
 {
   "name": "testcontainers-node-smocker",
-  "version": "10.7.1",
+  "version": "0.0.1",
   "license": "MIT",
   "keywords": [
     "smocker",
